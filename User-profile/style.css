@@ -1,0 +1,197 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('/htd-temp/Projects/User-profile/Images/mainback.png');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
+
+/* Container */
+.dashboard-container {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Profile Summary */
+.profile-summary {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.08);
+}
+
+.user-name {
+    font-size: 2.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.user-bio {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+/* Contact Information */
+.contact-info h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contact-info p, .social-links a {
+    color: #333;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.3rem 1rem;
+    border-radius: 6px;
+    background: #2980b9;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #3498db;
+}
+
+/* Skills */
+.skills h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.skill-item {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.skill-item span {
+    width: 100px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.skill-bar {
+    background: #dfe4ea;
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.progress {
+    height: 100%;
+    background: #16a085;
+    width: 0;
+    transition: width 1s ease;
+}
+
+/* Skill-specific colors */
+.html-skill { background: #e44d26; } /* HTML skill color */
+.css-skill { background: #264de4; } /* CSS skill color */
+.js-skill { background: #f0db4f; } /* JavaScript skill color */
+
+/* Portfolio Gallery */
+.portfolio-gallery h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: 280px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    background: #ffffff;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.gallery-content {
+    padding: 1rem;
+}
+
+.project-title {
+    color: #333;
+    font-weight: bold;
+}
+
+.project-description {
+    color: #555;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    background: #2980b9;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.project-link:hover {
+    background: #3498db;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
