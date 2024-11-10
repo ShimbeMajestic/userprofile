@@ -1,9 +1,9 @@
 // List of background images
 const backgrounds = [
-    '/htd-temp/Projects/User-profile/Images/back1.png',
-    '/htd-temp/Projects/User-profile/Images/back2.png',
-    '/htd-temp/Projects/User-profile/Images/back3.png',
-    '/htd-temp/Projects/User-profile/Images/back4.png',
+    './Images/back1.png',
+    './Images/back2.png',
+    './Images/back3.png',
+    './Images/back4.png',
 ];
 
 // Function to change background image
